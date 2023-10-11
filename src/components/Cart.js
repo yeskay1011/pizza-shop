@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Offcanvas from 'react-bootstrap/Offcanvas';
-import { Container } from 'react-bootstrap';
 import Orders from './Orders';
 
 const Cart = () => {
@@ -9,7 +8,7 @@ const Cart = () => {
     const [show, setShow] = useState(false);
 
     return (
-        <Container>
+        <>
             <Button variant="light position-relative" onClick={() => setShow(!show)} className="me-2">
                 <i class="bi bi-cart4"></i>
                 <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
@@ -28,7 +27,7 @@ const Cart = () => {
                     </div>
                 </Offcanvas.Body>
             </Offcanvas>
-        </Container>
+        </>
     );
 }
 
