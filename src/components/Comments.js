@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Form, Row, Col } from 'react-bootstrap';
+import { Container, Form, Row, Col, Button } from 'react-bootstrap';
 import InputGroup from 'react-bootstrap/InputGroup';
 import FloatingLabel from 'react-bootstrap/FloatingLabel';
 
@@ -10,7 +10,7 @@ const Comments = () => {
                 <h2 className='text-danger'>Comments <i class="bi bi-chat-left-heart"></i></h2>
             </div>
             <Container>
-                <Row className='justify-content-center'>
+                <Row className='justify-content-center text-center'>
                     <Col md={6}>
                         <Form>
                             <InputGroup className="mb-3">
@@ -38,6 +38,7 @@ const Comments = () => {
                             >
                                 <Form.Control as="textarea" placeholder="Leave a comment here" />
                             </FloatingLabel>
+                            <Button variant='danger'>Submit</Button>
                         </Form>
                     </Col>
                 </Row>
